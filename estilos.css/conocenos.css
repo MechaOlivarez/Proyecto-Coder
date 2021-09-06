@@ -1,0 +1,294 @@
+* {
+    margin:0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+header  {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor {
+
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    background-color:white; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fraseBienvenida {
+    
+    display: flex;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height:5%;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.contenidoFrase  {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;  
+    align-items: center;   
+}
+
+
+
+.logotipo {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom:40px;
+}
+.logotipoImg {
+    width:70px;
+    height: 70px; 
+}
+
+.navegador  {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.tituloPrincipal {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:2.5rem ;
+}
+li a {
+    text-decoration: none;
+    color: black;  
+    font-weight: 900;
+    width: 20%;
+    list-style: none;
+    font-size: 1.3rem;
+   
+}
+
+.menu {
+    display: inline-flex;  
+    padding-inline-end: 60px;
+    list-style: none;   
+}
+    
+body {
+    background-color:white;
+    font-family:'Roboto', sans-serif;
+    overflow-y: scroll;
+   
+}
+
+h1 {
+    color:black;
+    font-size:2.5rem;  
+}
+
+.sliderImagen {
+    width:85em;
+    height: 35em;
+       
+
+}
+
+.slide {
+
+    position: relative;
+  
+    
+   
+}
+
+.slide__info {
+
+    position:absolute;
+    align-items: center;
+    text-align: right;
+    letter-spacing: .08em;
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+    padding-right: 2em;
+
+}
+
+.textoSeccion {
+    padding-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.primeraFrase {
+    padding-top: 20px;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: .08em;
+    margin-bottom: .65em;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.comprarAhora {
+    
+    padding: 1em 1.8em;
+    margin-top: 70px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    z-index: 1; 
+    color: #fff3e4;
+    border-color:#9e3877;
+    background-color:#9e3877; 
+   
+}
+
+.comprarAhora:hover {
+    background:black;
+    color: #fff;
+    border-color:black;
+  }
+
+
+.nuestraHistoria {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    width: 70em;
+    text-align: center;
+
+
+}
+
+.textoLarge {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historia {
+    
+    font-weight: 900;
+    margin-top: 3em;
+    font-size: 1 rem;
+    letter-spacing: .08em;
+}
+
+.fundadorasImg {
+    width: 25em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    
+}
+
+.tituloFundadoras {
+    width: 100%;
+    text-align: center;
+    margin-top:5em;
+    margin-bottom:3em ;
+    font-size: 1.5em;
+}
+
+.fundadorasContainer {
+
+    display:flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textoFundadoras {
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    margin-top: 8em;
+    font-size: 1.1rem;
+    letter-spacing: .08em;
+
+}
+
+.lineasFinales {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lineasFoo {
+    display: inline-flex;  
+    padding-inline-end: 60px;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    color: black;
+    text-decoration:none 
+}
+
+.iconosRedes {
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+    column-gap: 1em;
+    
+    
+}
+.socialIcons {
+
+    height: 2em;
+    
+    
+}
+
+.contenedorIconos {
+    width: fit-content;
+    
+}
+
+.piePagina {
+   
+    background-color:hsl(0, 2%, 92%);
+
+}
+
+.copyR {
+
+    font-family: 'Roboto', sans-serif; 
+    background-color: black; 
+    color: white;
+    font-weight: 400;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.enlaceCopy {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    
+}

@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: scroll; }
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%; }
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em; }
+
+.fraseBienvenida {
+  display: flex;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 5%;
+  justify-content: center;
+  align-items: center; }
+
+.contenidoFrase {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  align-items: center; }
+
+.logotipo {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  padding-bottom: 40px; }
+
+.logotipoImg {
+  width: 70px;
+  height: 70px; }
+
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3em;
+  margin-bottom: 1.3em; }
+  .tituloPrincipal h1 {
+    font-size: 3rem; }
+  .tituloPrincipal .navegador {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    margin-top: 30px; }
+
+.menu {
+  display: inline-flex;
+  padding-inline-end: 60px;
+  list-style: none; }
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    width: 20%;
+    list-style: none;
+    font-size: 1.3rem; }
+
+.slide {
+  position: relative; }
+  .slide .slide__info {
+    position: absolute;
+    align-items: center;
+    text-align: right;
+    letter-spacing: .08em;
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+    padding-right: 2em; }
+  .slide .primeraFrase {
+    padding-top: 20px;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    letter-spacing: .08em;
+    margin-bottom: .65em;
+    font-size: 1.1rem;
+    font-weight: bold; }
+  .slide .slide h2 {
+    font-size: 2rem;
+    padding-top: 2em;
+    line-height: 1.1em;
+    font-weight: bolder; }
+  .slide .textoSeccion {
+    padding-top: 30px;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .slide .comprarAhora {
+    padding: 1em 1.8em;
+    margin-top: 70px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    z-index: 1;
+    color: #fff3e4;
+    border-color: #9e3877;
+    background-color: #9e3877; }
+  .slide .sliderImagen {
+    width: 100%; }
+  .slide .quieneSomos {
+    text-align: center; }
+  .slide .quieneSomos h2 {
+    text-align: center;
+    padding-bottom: 1.5em;
+    font-size: 2rem; }
+  .slide .textLarge {
+    line-height: 1.9em;
+    font-weight: 800;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; }
+  .slide p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1,5px;
+    font-size: 1.1rem; }
+  .slide .conoceMas {
+    margin-top: 3em;
+    position: static; }
+  .slide .conoce {
+    padding: 1em 1.8em;
+    margin-top: 70px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    z-index: 1;
+    color: #fff3e4;
+    border-color: #9e3877;
+    background-color: #9e3877; }
+  .slide .conoce:hover {
+    background: black;
+    color: #fff;
+    border-color: black; }
+
+.bestSellers {
+  background-color: white;
+  width: 100%; }
+  .bestSellers .ventasBest {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    background-color: white;
+    width: 100%; }
+  .bestSellers .ventasBest p {
+    font-size: 2em;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    font-weight: bold; }
+  .bestSellers .gridContainer {
+    display: grid;
+    grid-template-columns: 18em 18em;
+    grid-template-rows: 15.6em 3.125em 3.125em;
+    justify-content: center;
+    background-color: white;
+    column-gap: normal;
+    width: 36em;
+    height: 26em;
+    margin-left: auto;
+    margin-right: auto; }
+  .bestSellers .primerElemento:hover {
+    transform: scale(1.4); }
+  .bestSellers .imagenVenus {
+    width: 15em;
+    height: 15em; }
+  .bestSellers .segundoElemento:hover {
+    transform: scale(1.4); }
+  .bestSellers .imagenDavid {
+    width: 15em;
+    height: 15em; }
+  .bestSellers .tercerElemento {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    align-items: center; }
+  .bestSellers .cuartoElemento {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    align-items: center; }
+  .bestSellers .quintoElemento {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    align-items: center; }
+  .bestSellers .iraTienda {
+    text-decoration: none;
+    color: black;
+    font-weight: 900; }
+  .bestSellers .sextoElemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder; }
+  .bestSellers .iraTienda {
+    text-decoration: none;
+    color: black;
+    font-weight: 900; }
+
+.tituloSegundo {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px; }
+
+.contiene {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-bottom: 3em; }
+  .contiene .contact__seccion {
+    padding-top: 3.125em;
+    text-align: center;
+    width: 40%;
+    margin-right: 1.3em; }
+  .contiene .escribenos {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left; }
+  .contiene .textoContacto {
+    font-weight: 600;
+    text-align: left; }
+
+form {
+  border-style: none;
+  padding-left: 0.8em;
+  padding-top: 2.5em;
+  text-align: left; }
+  form fieldset {
+    font-weight: bolder;
+    border-style: none; }
+  form label {
+    display: block;
+    margin: .5em 0 0 0;
+    font-size: 0.9rem; }
+  form .inputCambios {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background: #fff;
+    color: #000;
+    border: 1px solid #d3cccc;
+    padding: .8em 1em;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    border-radius: 0;
+    -webkit-appearance: none;
+    box-sizing: border-box; }
+  form .especialLabel {
+    display: inline-block; }
+  form .enviar {
+    position: relative;
+    display: inline;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    z-index: 1;
+    color: #fff3e4;
+    border-color: #b2633b;
+    background-color: #b2633b; }
+  form .limpiar {
+    position: relative;
+    display: inline;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    z-index: 1;
+    color: #fff3e4;
+    border-color: #b2633b;
+    background-color: #b2633b; }
+
+.piePagina {
+  background-color: #dad8d8; }
+  .piePagina .lineasFinales {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .1em;
+    margin-left: auto;
+    margin-right: auto; }
+  .piePagina .lineasFooter {
+    display: inline-flex;
+    padding-inline-end: 60px;
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none; }
+  .piePagina .iconosRedes {
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+    column-gap: 1em; }
+  .piePagina .contenedorIconos {
+    width: fit-content; }
+  .piePagina .socialIcons {
+    height: 2em; }
+  .piePagina .copyR {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .piePagina .enlaceCopy {
+    color: white;
+    font-weight: 400;
+    text-decoration: none; }
+
+@media screen and (max-width: 780px) {
+  .fraseBienvenida {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 0.1em; }
+  .logotipo {
+    display: none; }
+  .contenedor {
+    margin-top: 1.5rem; }
+  .slide__info p {
+    display: none; }
+  .contiene {
+    display: flex;
+    flex-direction: column; }
+  .contact__seccion {
+    text-align: center;
+    width: 100%;
+    margin-right: 1.3em; } }

@@ -17,56 +17,57 @@
     <header>
         <div class="contenedor">
             <div class="fraseBienvenida"><a class="contenidoFrase" href="tienda.html">bienvenidos a nuestro sitio web! Disfruta de un 10% en tu primera compra!</a> </div>
-            <div class="logotipo" class="itemHeader"><img class="logotipoImg" src="../imagenes/Capture.PNG" alt="logotipo"></div>
+            <div class="logotipo"><img class="logotipoImg" src="../imagenes/Capture.PNG" alt="logotipo"></div>
+            <div class="search">
+                <div class="carroButton"><img class="carroImg" src="../imagenes/carrito.png"></div>
+                <div class="lupaButton"><img class="lupaImg" src="../imagenes/lupa.png"></div>
+            </div>
             <div class="tituloPrincipal"><h1>Candles Lab</h1> </div>
-            <nav class="navegador">
+            <nav>
                 <ul>
-                    <div class="menu"><li class="item"><a href="../index.html">Inicio</a></li></div>
-                    <div class="menu"><li class="item"><a href="../pages/conocenos.html">Conócenos</a></li></div>
-                    <div class="menu"><li class="item"><a href="../pages/tienda.html">Tienda</a></li></div>
-                    <div class="menu"><li class="item"><a href="../pages/contacto.html">Contactos</a></li></div>
-                    <div class="menu"><li class="item"><a href="../pages/envios.html">Política de envio</a></li></div>
+                    <div class="menu">
+                        <a href="../index.html">Inicio</a></li>
+                        <a href="../pages/conocenos.html">Conócenos</a></li>
+                        <a href="../pages/tienda.html">Tienda</a></li>
+                        <a href="../pages/contacto.html">Contactos</a></li>
+                        <a href="../pages/envios.html">Política de envio</a></li>
+                    </div>
                 </ul>
             </nav>
         </div> 
     </header>
     <main>
-        <h2 class="tituloSegundo"> Información de contacto</h2>
-        <section class=seccionDos>
-            <div class="contiene">
-                <article class="contact__seccion">
+        <section>
+            <div class="informacion-contacto">
+                <h2>Información de contacto</h2>     
+            </div>
+            <div class="contactanos">
+                <div class="contiene">
                     <p class="escribenos">Escribenos para poder ayudarte!
                     <br>
                     <br>
-                    <p class="textoContacto">Consultas generales: support@candleslab.com. <br> Consultas al por mayor:bigsales@candleslab.com</p>
+                    <p class="textoContacto">Consultas generales: support@candleslab.com. 
+                    <br> Consultas al por mayor:bigsales@candleslab.com</p>
                     <br>
                     <p class="textoContacto">Teléfono: (+34) 665216323 </p>
+                    <br>
                     <p class="textoContacto">Llame entre las 10 am y las 4 pm de lunes a viernes. Nuestro departamento de atención al cliente está cerrado los fines de semana.</p>
-                    <p class="textoContacto">¡Ven a visitar nuestra tienda ! </p>
-                </article>
-                <article>
-                    <form> 
-                        <fieldset>
-                            <label for="nombre">Nombre:</label> <input class="inputCambios" type="text" name="nombre" placeholder="Nombre"/>
-                            <label for="apellido">Apellido:</label> <input class="inputCambios" type="text" name="Apellido" placeholder="Apellido"/>
-                            <label for="Email">Email:</label> <input class="inputCambios" type="text" name="email" placeholder="jkisd@gmail.com"/>
-                            <label for="Consulta">Consulta:</label> 
-                            <textarea class="inputCambios" rows="6" cols="50" name="consulta aquí" placeholder="Haz tu consulta"></textarea>
-                            <br>
-                            <label class="especialLabel" for="acepta terminos y condiciones"> Acepta terminos y condiciones:</label> 
-                            <input class="inputCambios" type="checkbox" name="acepta terminos y condiciones" value="1"/>
-                            <br>
-                            <br>
-                            <input class="limpiar" type="reset" value="Limpiar"/>
-                            <input class="enviar" type="submit" value="Enviar"/>
-                            <br>
-                            <br>
-                        </fieldset>
-                    </form>
-                </article>
+                    <br>
+                    <br>
+                    <p class="textoContacto">¡Ven a visitar nuestra tienda! </p>
+                </div>
+            <div class="form-style">
+                 <h1>Contacto</h1>
+                 <form>
+                    <input type="text" name="field1" placeholder="Your Name" />
+                    <input type="email" name="field2" placeholder="Email Address" />
+                    <textarea name="field3" placeholder="Type your Message"></textarea>
+                    <input type="submit" value="Send" />
+                 </form>
+            </div>
             </div>
         </section>
-    </main>
+</main>
     <footer class="piePagina">
             <div class="lineasFinales">
                 <a class="lineasFoo" href="http://dominio.com/preguntasfrecuentes.html">Preguntas Frecuntes</a>

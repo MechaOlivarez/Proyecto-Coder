@@ -4,25 +4,29 @@
     box-sizing: border-box;   
 }
 
-header  {
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: scroll; 
+}
+  
+header {
     display: flex;
     align-items: center;
-    width: 100%;
-}
-
+    width: 100%; }
+  
 .contenedor {
 
-    display: flex;
-    flex-direction: column;
     line-height: 1;
     background-color:white; 
     width: 100%;
     align-items: center;
-    justify-content: center;
-}
-
-.fraseBienvenida {
+    padding-bottom: 2em;
     
+    }
+    
+.fraseBienvenida {
+                
     display: flex;
     background-color: black;
     position: fixed;
@@ -32,182 +36,172 @@ header  {
     height:5%;
     justify-content: center;
     align-items: center; 
-}
-
-
+    z-index: 1;
+    
+    }
+        
+        
 .contenidoFrase  {
+                   
     color:white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;  
     align-items: center;   
-}
-
-
-
+           
+    }
+        
+        
 .logotipo {
+            
     display: flex;
     justify-content: center;
-    padding-top: 45px;
-    padding-bottom:40px;
-}
-.logotipoImg {
-    width:70px;
-    height: 70px; 
-}
-
-.navegador  {
-    display: flex;
-    justify-content: center; 
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.tituloPrincipal {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size:2.5rem ;
-}
-li a {
-    text-decoration: none;
-    color: black;  
-    font-weight: 900;
-    width: 20%;
-    list-style: none;
-    font-size: 1.3rem;
-   
-}
-
-.menu {
-    display: inline-flex;  
-    padding-inline-end: 60px;
-    list-style: none;   
-}
-    
-body {
-    background-color:white;
-    font-family:'Roboto', sans-serif;
-    overflow-y: scroll;
-   
-}
-
-h1 {
-    color:black;
-    font-size:2.5rem;  
-}
-
-.sliderImagen {
-    width:85em;
-    height: 35em;
-       
-
-}
-
-.slide {
-
-    position: relative;
-  
-    
-   
-}
-
-.slide__info {
-
-    position:absolute;
-    align-items: center;
-    text-align: right;
-    letter-spacing: .08em;
-    width: 100%;
-    height: 100%;
     padding-top: 2em;
-    padding-right: 2em;
-
-}
-
-.textoSeccion {
-    padding-top: 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
     
-}
-
-.primeraFrase {
-    padding-top: 20px;
-    text-transform: uppercase;
-    line-height: 1.3em;
-    letter-spacing: .08em;
-    margin-bottom: .65em;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.comprarAhora {
+    }   
+            
+.logotipoImg {
+        
+    width:45px;
+    height: 45px; 
+            
+    }
     
-    padding: 1em 1.8em;
-    margin-top: 70px;
-    border: 1px solid transparent;
-    border-radius: 0;
-    text-transform: uppercase;
-    font-size: 0.75rem;
+.tituloPrincipal {
+            
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+    
+        }   
+            
+            
+.tituloPrincipal h1 {
+            
+    font-size:3rem;  
+            
+    }
+    
+.search {
+        
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    justify-content: right;
+    column-gap: 1em; 
+    margin-right:2.5em ;
+       
+    }   
+        
+.carroButton {
+                
+    min-width: fit-content ; 
+    
+    }
+                
+.carroImg {
+    
+    height: 1.3em; 
+                
+    }
+            
+.lupaButton {
+                
+    min-width: fit-content ; 
+    
+    }
+        
+.lupaImg{
+        
+    height: 1.3em;
+                   
+    }
+    
+.menu {
+        
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
+    }   
+         
+.menu a {
+            
+    float: left;
     text-align: center;
-    letter-spacing: .2em;
-    font-family:'Roboto', sans-serif;
+    padding: 1em 2em;
+    padding: 1em 1.8em;
+    margin-top: 3em;
+    font-size: 1.1rem;
     font-weight: bold;
     font-style: normal;
     z-index: 1; 
-    color: #fff3e4;
-    border-color:#9e3877;
-    background-color:#9e3877; 
+    border: none;
+    color:black;
+    padding: 16px 32px;
+    text-align: center;
+    transition:transform 0.3s;
+    letter-spacing: .1em;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+           
+    } 
+    
+.menu a:hover {
+         
+    transform: scale(1.3);
+     }    
+    
+.seccion-historia {
    
+    padding-bottom:4%;
+    padding-top: 0.5em;
+    width: 100%;
+    background-color:hsl(0deg 6% 93%);
 }
-
-.comprarAhora:hover {
-    background:black;
-    color: #fff;
-    border-color:black;
-  }
-
 
 .nuestraHistoria {
     
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5em;
-    width: 70em;
-    text-align: center;
-
-
+    margin-left: 3%;
+    margin-right: 3%;
+     
 }
 
-.textoLarge {
-    margin-left: auto;
-    margin-right: auto;
+.nuestraHistoria h2 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 2rem;
+   
 }
 
 .historia {
     
-    font-weight: 900;
-    margin-top: 3em;
-    font-size: 1 rem;
-    letter-spacing: .08em;
+    
+    line-height: 1,5px;
+    font-size: 1.2rem;
+    letter-spacing: .03em;
+    line-height: 1.9em;
+    font-weight: 800;
+
 }
 
 .fundadorasImg {
-    width: 25em;
+    width: 25%;
     margin-right: 3em;
     margin-bottom: 3em;
     
 }
 
 .tituloFundadoras {
-    width: 100%;
+   
     text-align: center;
-    margin-top:5em;
-    margin-bottom:3em ;
-    font-size: 1.5em;
+    padding-top: 3%;
+    padding-bottom: 4%;
+    font-size: 1.3rem;
 }
 
 .fundadorasContainer {
@@ -216,12 +210,13 @@ h1 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 7%;
 }
 
 .textoFundadoras {
     font-family:'Roboto', sans-serif;
     font-weight: 900;
-    margin-top: 8em;
+    padding-top: 6%;
     font-size: 1.1rem;
     letter-spacing: .08em;
 

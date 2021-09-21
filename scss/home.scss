@@ -1,7 +1,6 @@
 
  @import 'variables.scss';
  
-
 * {
     margin:0;
     padding: 0; 
@@ -12,27 +11,18 @@ body {
     
     background-color:whitesmoke;
     font-family:'Roboto', sans-serif;
-    overflow-y: scroll;
-   
+    overflow-x:hidden;   
 }
 
-header  {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
 
 .contenedor {
 
-    display: flex;
-    flex-direction: column;
     line-height: 1;
     background-color:white; 
     width: 100%;
     align-items: center;
-    justify-content: center;
     padding-bottom: 2em;
-}
+
         
     .fraseBienvenida {
             
@@ -45,7 +35,8 @@ header  {
         height:5%;
         justify-content: center;
         align-items: center; 
-    }
+        z-index: 1;
+    
     
         .contenidoFrase  {
                
@@ -55,187 +46,255 @@ header  {
             font-weight: bold;  
             align-items: center;   
         }
+    }
     
     .logotipo {
         display: flex;
         justify-content: center;
-        padding-top: 45px;
-        padding-bottom:40px;
-    }
+        padding-top: 2em;
+        
         .logotipoImg {
-            width:70px;
-            height: 70px; 
+            width:45px;
+            height: 45px; 
         }
+    }
 
     .tituloPrincipal {
         
         display: flex;
         justify-content: center;
-        margin-top: 1.3em;
-        margin-bottom: 1.3em;
+        margin-bottom: 1em;
         
         
         h1 {
         
             font-size:3rem;  
         }
-        
-    .navegador  {
-            
+    }
+
+    .search {
         display: flex;
-        justify-content: center; 
-        margin-bottom: 2em;
-        margin-top: 30px;   
-    }       
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        justify-content: right;
+        column-gap: 1em; 
+        margin-right:2.5em ;
+    
+    
+        .carroButton {
+            min-width: fit-content ; 
+            
+            
+        
+            .carroImg {
+            height: 1.3em; 
+            }
+        }
+        
+        .lupaButton {
+            min-width: fit-content ; 
+    
+            .lupaImg{
+                height: 1.3em;
+               
+            }
+        }
+
+    }
 }
 
 .menu {
     
-    display: inline-flex;  
-    padding-inline-end: 60px;
-    list-style: none;  
+    overflow: hidden;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    
    
-    li a {
-               
-    text-decoration: none;
-    color: black;  
-    font-weight: 900;
-    width: 20%;
-    list-style: none;
-    font-size: 1.3rem;
+    a {
+        float: left;
+        text-align: center;
+        padding: 1em 1.8em;
+        margin-top: 3em;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: normal;
+        z-index: 1; 
+        border: none;
+        color:black;
+        padding: 16px 32px;
+        text-align: center;
+        transition:transform 0.3s;
+        letter-spacing: .1em;
+        font-weight: bold;
+        font-style: normal;
+        text-decoration: none;
+       
     } 
 
+    a:hover {
+      transform: scale(1.3);
+      }    
 }
-
 
 .slide {
 
     position: relative;
+    
+    
+.slide__info {
 
-    .slide__info {
-
-        position:absolute;
+        background: url(../imagenes/decorative-candles-with-flowers.jpg);
+        background-size:contain;
+        background-repeat:repeat;
+        background-position: bottom;
+        height:400px;
+        position:relative;
         align-items: center;
         text-align: right;
-        letter-spacing: .08em;
         width: 100%;
-        height: 100%;
-        padding-top: 2em;
-        padding-right: 2em;
-    
+        padding-top:2em;
+        padding-right: 4em;
+        transition: transform .2s;
+       
     }
 
-    .primeraFrase {
-        padding-top: 20px;
+.slide__info:hover {
+
+        transform: scale(1.03);    
+    }
+
+.primeraFrase {
+        padding-top: 1.2em;
         text-transform: uppercase;
         line-height: 1.3em;
         letter-spacing: .08em;
-        margin-bottom: .65em;
         font-size: 1.1rem;
         font-weight: bold;
         
     }
 
-    .slide h2 {
-        font-size: $font-size-subtitulos;
-        padding-top: 2em;
+.somosCandle {
+        font-size:$font-size-subtitulos;
+        padding-top: 1.2em;
         line-height: 1.1em;
         font-weight: bolder;
-    }
-  
-    .textoSeccion {
-        padding-top: 30px;
-        font-size: 1.5rem;
-        font-weight: bold;
+        margin-bottom:0.9em;  
         
     }
-
-    .comprarAhora {
     
-        padding: 1em 1.8em;
-        margin-top: 70px;
-        border: 1px solid transparent;
-        border-radius: 0;
-        text-transform: uppercase;
+.textoSeccion {
+        
+        font-size: 1.2rem;
+        font-weight:900;
+        letter-spacing:.04em;
+        padding-left: 43em;
+        line-height: 1.9em; 
+      
+    }
+
+.comprarAhora {
+           
+        margin-top: 30px;
         font-size: 0.75rem;
-        text-align: center;
-        letter-spacing: .2em;
-        font-family:'Roboto', sans-serif;
         font-weight: bold;
         font-style: normal;
         z-index: 1; 
-        color: #fff3e4;
-        border-color:#9e3877;
-        background-color:#9e3877; 
-       
-    }
-
-    .sliderImagen {
-        width:100% ;
-           
-    
-    }
-
-    .quieneSomos {
+        text-transform: uppercase;
+        background-color: #88563a;
+        border: none;
+        color: white;
+        padding: 16px 32px;
         text-align: center;
-    
+        opacity: 0.8;
+        transition: 0.3s;
+        letter-spacing: .2em;
+        font-weight: bold;
+        font-style: normal;
+        text-decoration: none;
+            
+    }
+}
+.comprarAhora:hover {
+        opacity: 1;
     }
 
-    .quieneSomos h2 {
+.quieneSomos {
     
         text-align: center;
-        padding-bottom: 1.5em;
-        font-size: $font-size-subtitulos;
+        margin-bottom: 4em;
+        display:flex;
+        flex-direction: column;
+        
+    
+
+    .quienes-somos-titulo {
+
+        text-align: center;
+        background-color: white;
+        padding-bottom: 0.5em;
+        margin-bottom: 2%;
+
+        h2 {
+            font-size: $font-size-subtitulos;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+
+        }
+        
     }
 
-    .textLarge {
+    p {
+        font-family:'Roboto', sans-serif ;
+        line-height: 1,5px;
+        font-size:$font-size-parrafos;
+        letter-spacing: .03em; 
         line-height: 1.9em;
         font-weight: 800;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 80%; 
     }
-    
-    p {
-        font-family:'Roboto', sans-serif ;
-        line-height: 1,5px;
-        font-size: 1.1rem;
-       
-    }
-    
-    .conoceMas {
-        margin-top: 3em;
+
+    .boton2 {
+        
         position: static;
-    }
-    .conoce {
+        margin-top: 2%;
         padding: 1em 1.8em;
-        margin-top: 70px;
-        border: 1px solid transparent;
-        border-radius: 0;
-        text-transform: uppercase;
-        font-size: 0.75rem;
         text-align: center;
-        letter-spacing: .2em;
-        font-family:'Roboto', sans-serif;
-        font-weight: bold;
-        font-style: normal;
-        z-index: 1; 
-        color: #fff3e4;
-        border-color:#9e3877;
-        background-color:#9e3877; 
+        margin-left: auto;
+        margin-right: auto;
+        
+        .conoce {
+           
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            background-color:#88563a ;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            margin: 4px 2px;
+            opacity: 0.7;
+            transition: 0.3s;
+            letter-spacing: .2em;
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none; 
+          
+        }
     }
     
     .conoce:hover {
-        background:black;
-        color: #fff;
-        border-color:black;
-    }  
+        opacity: 1}
+        
 }
 
 .bestSellers {
-    background-color: white;
-    width: 100%;
 
+    width: 100%;
+    margin-bottom: 5%;
     .ventasBest {
    
         display: flex;
@@ -247,58 +306,66 @@ header  {
     
         .ventasBest p {
             font-size: 2em;
-            padding-top: 1.3em;
-            padding-bottom: 1.3em;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
             font-weight: bold;
         }
 
     .gridContainer {
         display: grid;
         grid-template-columns:18em 18em;
-        grid-template-rows:15.6em 3.125em 3.125em;
-        justify-content: center;
-        background-color: white;
+        grid-template-rows:15.6em 4.125em 3.125em;
         column-gap: normal;
         width: 36em;
         height: 26em;
         margin-left:auto;
-        margin-right: auto;   
+        margin-right: auto; 
+        margin-top: 6em;
+        text-align: center;  
     }
 
         .primerElemento:hover {
-            transform: scale(1.40);
+            transform: scale(1.10);
         }
             .imagenVenus {
                 width: 15em;
                 height: 15em;
+                border-radius: 1%;
             }
 
         .segundoElemento:hover {
-            transform: scale(1.40);
+            transform: scale(1.10);
         
         }
 
             .imagenDavid {
                 width: 15em;
                 height:15em;
+                border-radius: 1%;
             }
         
 
         .tercerElemento {
     
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            font-weight: bolder;
-            align-items: center;
+         
+            p {
+                font-size: 1.3rem;
+                font-weight: bold;
+                letter-spacing: .1em;
+            }
         }
 
         .cuartoElemento {
         
-            display: flex;
-            justify-content: center;
-            font-weight: bolder;
-            align-items: center;
+            
+
+            p {
+                font-size: 1.3rem;
+                font-weight: bold;
+                letter-spacing: .1em;
+                text-align: center;
+                margin-right: 0.5em;
+            }
             
         }
 
@@ -308,13 +375,33 @@ header  {
             justify-content: center;
             font-weight: bolder;
             align-items: center;
-        }
+            margin-top: 5%;
+            text-align: center;
+           
+        
 
-            .iraTienda {
-                text-decoration: none;
-                color: black;
-                font-weight: 900;   
+            .agregar-al-carrito {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            background-color: #88563a;
+            border: none;
+            color: white;
+            padding: 16px 16px;
+            text-align: center;
+            margin: 4px 2px;
+            opacity: 0.7;
+            transition: 0.3s;
+            letter-spacing: .2em;
+            text-decoration: none; 
+            border-radius: 1%;
+
             }
+
+            .agregar-al-carrito:hover {
+                opacity: 1
+              
+            }
+        }
 
         .sextoElemento { 
         
@@ -322,129 +409,148 @@ header  {
             justify-content: center;
             align-items: center;
             font-weight: bolder;
+            margin-top: 5%;
         
-        }
+            .agregar-al-carrito {
 
-            .iraTienda {
-                text-decoration: none;
-                color: black;
-                font-weight: 900;   
-            }    
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            background-color:#88563a;
+            border: none;
+            color: white;
+            padding: 16px 16px;
+            text-align: center;
+            margin: 4px 2px;
+            opacity: 0.7;
+            transition: 0.3s;
+            letter-spacing: .2em;
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none; 
+
+        } 
+
+            .agregar-al-carrito:hover {
+               opacity: 1;
+               
+            }
+        }  
 }
 
-.tituloSegundo  {
-    font-size: $font-size-subtitulos;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+.informacion-contacto {
+    background-color: white;
+   
+    h2 {
+        text-align: center;
+        padding-top:0.5em;
+        padding-bottom: 0.5em;
+        font-size:$font-size-subtitulos;
+    }
 }
+    
 
-.contiene {
+.contactanos {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    padding-bottom:3em;
+   
 
-    .contact__seccion {
-        padding-top: 3.125em;
-        text-align: center;
-        width: 40%;
-        margin-right:1.3em;
-    }
+    .contiene {
 
+        display: block;
+        margin-left: 3em;
+        margin-top: 4em;
+        justify-content: center;
+        padding-bottom:4em;
+        width: 45%;
+    
         .escribenos {
+
             font-weight:bold;
             font-size: 1.5rem;
             text-align: left ;
+            letter-spacing: .1em;
         }
 
         .textoContacto {
-            font-weight: 600;
-            text-align: left;
+               
+        font-weight: 600;
+        text-align: left;
+        letter-spacing: .1em;
+           
         }
+    }
 }
 
-form {
-    border-style: none;
-    padding-left:0.8em;
-    padding-top: 2.5em;
-    text-align: left;
+.form-style{
+	font: 95% 'Roboto', sans-serif;
+	max-width: 27%;
+	margin: 10px auto;
+    margin-top: 3em;
+	background: whitesmoke;
+    
+    transition: transform .2s;
+}
 
-    fieldset {
-        font-weight: bolder;
-        border-style: none;   
-    }
+.form-style:hover {
+    transform: scale(1.03);
 
-        label {
-            display: block;
-            margin: .5em 0 0 0;
-            font-size: 0.9rem;
-        }
+}
+.form-style h1{
+	background:#131212;
+	padding: 0.5em ;
+	font-size: 140%;
+	font-weight: 400;
+	text-align: center;
+	color: #fff;
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select {
+	
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% 'Roboto', sans-serif;
+    font-weight: 800;
+}
 
-            .inputCambios {
-                font-size: 0.75rem;
-                line-height: 0.75rem;
-                font-family: 'Roboto', sans-serif;
-                font-weight: 500;
-                font-style: normal;
-                background: #fff;
-                color: #000;
-                border: 1px solid #d3cccc;
-                padding: .8em 1em;
-                margin: 0;
-                vertical-align: middle;
-                max-width: 100%;
-                border-radius: 0;
-                -webkit-appearance: none;
-                box-sizing:border-box;
-            }
-
-        .especialLabel {
-
-            display: inline-block;
-        }
-
-        .enviar {
-            position: relative;
-            display: inline;
-            padding: 10px 20px;
-            border: 1px solid transparent;
-            border-radius: 0;
-            text-transform: uppercase;
-            font-size:0.75rem;
-            text-align: center;
-            letter-spacing: .2em;
-            font-family:'Roboto', sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            z-index: 1; 
-            color: #fff3e4;
-            border-color: #b2633b;
-            background-color:#b2633b; 
-        
-        }
-        
-        .limpiar {
-            position: relative;
-            display: inline;
-            padding: 10px 20px;
-            border: 1px solid transparent;
-            border-radius: 0;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            text-align: center;
-            letter-spacing: .2em;
-            font-family:'Roboto', sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            z-index: 1; 
-            color: #fff3e4;
-            border-color: #b2633b;
-            background-color:#b2633b;    
-        }
+.form-style input[type="submit"],
+.form-style input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background:#212020;	
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color:white;
+    font-weight: 400;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.form-style [type="submit"]:hover,
+.form-style [type="button"]:hover{
+	
+    color: white;
+    opacity: 1;
 }
 
 .piePagina {
@@ -506,34 +612,111 @@ form {
 }
 
 @media screen and ( max-width: 780px) {
-    .fraseBienvenida {
-        font-size: 1.2rem;
+
+    body {
+        overflow-x: hidden;
+        width: fit-content;
+  
+    }
+
+    .menu  {
         display: flex;
+        flex-direction: row;
+        width: 100%;
+    }  
+
+    .menu a  {
+        margin-top: 0em;
+        padding:0.5em 0.5em;
+
+    }
+
+    .fraseBienvenida {
         align-items: center;
         text-align: center;
-        padding-right: 0.1em;
+        padding: 1em;   
     }
-    
-    .logotipo {
+
+    .contenidoFrase {
+        padding: 0.5em;
+        font-size: 1.3rem;
+    }
+
+    .logotipoImg {
         display: none;
     }
 
     .contenedor {
         margin-top: 1.5rem;
+       
     }
 
-    .slide__info p {
+    .contenedor .search {
+        padding-top: 0.1em;
+
+    }
+
+    .slide {
+
+        position: relative;
+
+    }
+        
+        
+    .slide .slide__info {
+    
+        background: url(../imagenes/decorative-candles-with-flowers.jpg);
+        background-size: cover;
+        }
+
+    .slide__info .textoSeccion {
         display: none;
     }
 
-    .contiene {
+    .slide__info .primeraFrase {
+        font-size: 1.5rem;
+    }
+
+    .slide__info .somosCandle {
+        display: none;
+    
+    }
+
+    .slide__info .comprarAhora {
+        margin-top: 10em;
+        font-size: 1rem;
+    }
+
+    .contactanos {
         display: flex;
         flex-direction: column;
     }
 
-    .contact__seccion {
-        text-align: center;
-        width: 100%;
-        margin-right:1.3em;
+    .contactanos .contiene {
+        
+        margin-left: 2em;
+        margin-right: auto;
+        margin-top: 3em;
+        justify-content: center;
+        padding-bottom:1em;
+        width: 85%;
+        font-size: 1.5rem;
+
+    }
+
+    .contactanos .form-style {
+    font-family: 'Roboto', sans-serif;
+	max-width: 85%;
+	margin: 10px auto;
+    margin-top: 3em;
+	background: whitesmoke; 
+    transition: transform .2s;
+    margin-bottom: 6em;
+    font-size: 1.5rem;
+
+    }
+
+    .piePagina .lineasFinales {
+        display: none;
     }
 }

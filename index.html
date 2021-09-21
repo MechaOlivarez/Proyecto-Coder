@@ -20,14 +20,20 @@
         <div class="contenedor">
             <div class="fraseBienvenida"><a class="contenidoFrase" href="tienda.html">bienvenidos a nuestro sitio web! Disfruta de un 10% en tu primera compra!</a> </div>
             <div class="logotipo"><img class="logotipoImg" src="imagenes/Capture.PNG" alt="logotipo"></div>
+            <div class="search">
+                <div class="carroButton"><img class="carroImg" src="imagenes/carrito.png"></div>
+                <div class="lupaButton"><img class="lupaImg" src="imagenes/lupa.png"></div>
+            </div>
             <div class="tituloPrincipal"><h1>Candles Lab</h1> </div>
-            <nav class="navegador">
+            <nav>
                 <ul>
-                    <div class="menu"><li class="item"><a href="./index.html">Inicio</a></li></div>
-                    <div class="menu"><li class="item"><a href="pages/conocenos.html">Conócenos</a></li></div>
-                    <div class="menu"><li class="item"><a href="pages/tienda.html">Tienda</a></li></div>
-                    <div class="menu"><li class="item"><a href="pages/contacto.html">Contactos</a></li></div>
-                    <div class="menu"><li class="item"><a href="pages/envios.html">Política de envio</a></li></div>
+                    <div class="menu">
+                        <a href="./index.html">Inicio</a></li>
+                        <a href="pages/conocenos.html">Conócenos</a></li>
+                        <a href="pages/tienda.html">Tienda</a></li>
+                        <a href="pages/contacto.html">Contactos</a></li>
+                        <a href="pages/envios.html">Política de envio</a></li>
+                    </div>
                 </ul>
             </nav>
         </div> 
@@ -36,21 +42,16 @@
         <section class="slide">
             <div class="slide__info">
                 <p class="primeraFrase">Bienvenidos a nuestra tienda!</p>
-                <h2>Somos Candle Lab</h2>
+                <h2 class="somosCandle">Somos Candle Lab</h2>
                 <p class="textoSeccion"> Disenos exclusivos, aromas cautivadores e ingredientes sostenibles.Esencialmente, todo lo que nos gusta para ambientar nuestros espacios.</p>
                 <button class="comprarAhora"><a href="pages/tienda.html"></a>Comprar ahora!</button>
             </div>
-            <img class="sliderImagen" src="imagenes/decorative-candles-with-flowers.jpg" alt="Image">
-            <article class="quieneSomos">
-                <h2>Quiénes somos  </h2>
-                <div class="textLarge">
-                    <p>Somos Candle Lab. Nuestros aromas de ensueño están inspirados en  momentos y recuerdos. Entregamos nuestras velas usando cera de soya sostenible y aceites de perfume libres de ftalato infundidos con aceites esenciales. Nos enorgullecemos de una producción ética y precios accesibles.</p>
-                 </div>
-                 <div class="conoceMas">
-                    <a class="conoce" href="http://dominio.com/productos.html">Conoce más</a>
-                 </div>
-            </article>
         </section>
+        <div class="quieneSomos">
+          <div class="quienes-somos-titulo"><h2>Quiénes somos  </h2> </div>
+            <p>Nuestros aromas de ensueño están inspirados en  momentos y recuerdos. Entregamos nuestras velas usando cera de soya sostenible y aceites de perfume libres de ftalato infundidos con aceites esenciales. Nos enorgullecemos de una producción ética y precios accesibles.</p>
+        <div class="boton2"><a class="conoce" href="http://dominio.com/conocenos.html">Conoce más</a></div>
+        </div>
         <section class="bestSellers">
             <div class="ventasBest">
                 <p>Ventas Best sellers</p>
@@ -62,22 +63,28 @@
                     <img class="imagenDavid"src="imagenes/david.jpg" alt="david"></div>
                 <div class="tercerElemento">
                 <p>Venus de Milo</p>
+                <br>
+                <p>$25</p>
                 </div>
                 <div class="cuartoElemento">
                     <p>Busto de David</p>
+                    <br>
+                    <p>$30</p>
                 </div>
                 <div class="quintoElemento">
-                    <a class="iraTienda" href="pages/tienda.html">£25</a>
+                    <a class="agregar-al-carrito" href="http://dominio.com/tienda.html">Agregar al carrito</a>
                 </div>
                 <div class="sextoElemento">
-                   <a  class="iraTienda" href="pages/tienda.html">£30</a>
+                   <a class="agregar-al-carrito" href="http://dominio.com/tienda.html">Agregar al carrito</a>
                 </div>
             </div>
-         </section>
-        <h2 class="tituloSegundo"> Información de contacto</h2>
+        </section>
         <section>
-            <div class="contiene">
-                <article class="contact__seccion">
+            <div class="informacion-contacto">
+                <h2>Información de contacto</h2>     
+            </div>
+            <div class="contactanos">
+                <div class="contiene">
                     <p class="escribenos">Escribenos para poder ayudarte!
                     <br>
                     <br>
@@ -90,27 +97,16 @@
                     <br>
                     <br>
                     <p class="textoContacto">¡Ven a visitar nuestra tienda! </p>
-                </article>
-                <article>
-                    <form> 
-                        <fieldset>
-                            <label for="nombre">Nombre:</label> <input class="inputCambios" type="text" name="nombre" placeholder="Nombre"/>
-                            <label for="apellido">Apellido:</label> <input class="inputCambios" type="text" name="Apellido" placeholder="Apellido"/>
-                            <label for="Email">Email:</label> <input class="inputCambios" type="text" name="email" placeholder="jkisd@gmail.com"/>
-                            <label for="Consulta">Consulta:</label> 
-                            <textarea class="inputCambios" rows="6" cols="50" name="consulta aquí" placeholder="Haz tu consulta"></textarea>
-                            <br>
-                            <label class="especialLabel" for="acepta terminos y condiciones"> Acepta terminos y condiciones:</label> 
-                            <input class="inputCambios" type="checkbox" name="acepta terminos y condiciones" value="1"/>
-                            <br>
-                            <br>
-                            <input class="limpiar" type="reset" value="Limpiar"/>
-                            <input class="enviar" type="submit" value="Enviar"/>
-                            <br>
-                            <br>
-                        </fieldset>
-                    </form>
-            </article>
+                </div>
+            <div class="form-style">
+                 <h1>Contacto</h1>
+                 <form>
+                    <input type="text" name="field1" placeholder="Your Name" />
+                    <input type="email" name="field2" placeholder="Email Address" />
+                    <textarea name="field3" placeholder="Type your Message"></textarea>
+                    <input type="submit" value="Send" />
+                 </form>
+            </div>
         </div>
     </section>
     <footer class="piePagina">

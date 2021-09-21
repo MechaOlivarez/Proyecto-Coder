@@ -4,15 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
-    "build-css": "node-sass --include-path scss scss/index.scss css/index.css", 
+    "build-css": "node-sass --include-path scss scss/index.scss css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-   
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MechaOlivarez/Proyecto-Coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MechaOlivarez/Proyecto-Coder/issues"
+  },
+  "homepage": "https://github.com/MechaOlivarez/Proyecto-Coder#readme"
 }
